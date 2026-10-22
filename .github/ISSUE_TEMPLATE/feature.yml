@@ -1,0 +1,26 @@
+name: Feature
+description: Something new we should add or change
+labels: ["feature"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What we want
+      description: One or two sentences. Say what the player or user gets out of it.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why now
+  - type: textarea
+    id: done
+    attributes:
+      label: How we'll know it's done
+  - type: checkboxes
+    id: both
+    attributes:
+      label: Needs both of us?
+      description: Anything that spends money, signs, files, publishes or ships.
+      options:
+        - label: Yes, needs both founders

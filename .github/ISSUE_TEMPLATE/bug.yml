@@ -1,0 +1,27 @@
+name: Bug
+description: Something is broken or behaves wrong
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      placeholder: "1. Start a new run\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Version and platform
+      description: Build or commit, plus OS or device.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, logs, notes
